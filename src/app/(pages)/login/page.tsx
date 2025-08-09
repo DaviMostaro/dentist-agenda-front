@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+import InitialRightScreen from "@/components/ui/initialRightScreen";
 import Input from "@/components/ui/input";
 
 export default function LoginPage() {
@@ -8,12 +10,13 @@ export default function LoginPage() {
                     <h1 className="text-6xl font-bold mt-20 mb-20">Login</h1>
 
                     <Input label='Email' placeholder='Enter your email' type='email' />     
-                    <Input label='Password' placeholder='Enter your password' type='password' />         
+                    <Input label='Password' placeholder='Enter your password' type='password' /> 
+                    <p className="text-sm font-semibold text-blue-500 cursor-pointer hover:underline">Forgot your password?</p>       
+                    <Button className="w-sm h-12 cursor-pointer mt-10">Sign in</Button> 
+
+                    <p className="text-sm font-semibold mt-10">Don't have an account? <span className="text-blue-500 cursor-pointer hover:underline">Sign up</span></p>
                 </div>
-                <div className="w-[57%] h-screen bg-blue-500 flex flex-col justify-center items-center">
-                    <h1 className="text-3xl text-white font-bold mt-5">Welcome to your Dentist Agenda</h1>
-                    <h2 className="text-xl text-white font-semibold mt-5">Schedule your patients and organize your clinic quickly and easily.</h2>
-                </div>
+                <InitialRightScreen />
             </div>
         </div>
     )
