@@ -56,8 +56,8 @@ export default function RegisterPage() {
 
     return (
         <div>
-            <div className="w-full h-screen flex flex-row">
-                <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.3 }} className="w-[43%] h-screen flex flex-col items-center gap-3">
+            <div className="w-full min-w-[420px] h-screen flex flex-row">
+                <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.3 }} className="w-[100%] xl:w-[43%] h-screen flex flex-col items-center justify-center xl:justify-normal gap-3">
                     <h1 className="text-6xl font-bold mt-15 mb-15">Register</h1>
 
                     <form onSubmit={handleSubmit(onSubmit)} className={`w-full flex flex-col items-center ${errors ? 'gap-0' : 'gap-3'}`}>
